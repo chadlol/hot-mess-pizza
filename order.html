@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Menu</title>
+    <link rel="stylesheet" href="stylesheets/app.css"/>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Freckle+Face' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <li class="name"><h1><a href="index.html">Hot Mess Pizza<img id="topbar-logo" src="images/logo.png" alt="Home"></a></h1></li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+        <ul class="right">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown"><a href="menu.html">Menu</a>
+                <ul class="dropdown">
+                    <li class="active"><a href="#">Order Now</a></li>
+                </ul>
+            </li>
+
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a>
+
+            </li>
+        </ul>
+    </section>
+</nav>
+
+<div class="row">
+    <div class="medium-12 column">
+        <h4>Order</h4>
+    </div>
+</div>
+
+<form>
+    <div class="row">
+        <div class="medium-8 medium-centered columns panel radius">
+            <div class="row">
+                <div class="small-8 medium-centered column">
+                    <label>Order Type</label>
+                    <input type="radio" name="order_type" value="Eat In" id="orderEatIn"><label for="orderEatIn">Eat In</label>
+                    <input type="radio" name="order_type" value="Pickup" id="orderPickup"><label for="orderPickup">Pickup</label>
+                    <input type="radio" name="order_type" value="Delivery" id="orderDelivery"><label for="orderDelivery">Delivery</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="medium-6 small-12 column">
+                    <label>Name
+                        <input type="text" placeholder="Name" />
+                    </label>
+                </div>
+
+                <div class="medium-6 small-12 column">
+                    <label>Phone
+                        <input type="tel" placeholder="Phone" />
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+
+
+                <div class="small-12 column">
+                    <label>Address
+                        <input type="text" placeholder="Address" />
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <table class="small-12 column order-table">
+                    <tr>
+                        <th></th>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="order" value="Hot Mess"></td>
+                        <td>Hot Mess</td>
+                        <td><input type="number" name="qty" min="0" value="1"></td>
+                        <td>$9.99</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="order" value="The Sissy"></td>
+                        <td>The Sissy</td>
+                        <td><input type="number" name="qty" min="0" value="1"></td>
+                        <td>$10.99</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="order" value="Euro Style"></td>
+                        <td>Euro Style</td>
+                        <td><input type="number" name="qty" min="0" value="1"></td>
+                        <td>$14.99</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="order" value="Original Pepper"></td>
+                        <td>Original Pepper</td>
+                        <td><input type="number" name="qty" min="0" value="1"></td>
+                        <td>$12.99</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="order" value="Classic Salad"></td>
+                        <td>Classic Salad</td>
+                        <td><input type="number" name="qty" min="0" value="1"></td>
+                        <td>$7.99</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="order" value="Fruit Bowl"></td>
+                        <td>Fruit Bowl</td>
+                        <td><input type="number" name="qty" min="0" value="1"></td>
+                        <td>$5.99</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="order" value="Drink"></td>
+                        <td>
+                            <select>
+                                <option value="cola">Cola</option>
+                                <option value="lemonade">Lemonade</option>
+                                <option value="rootbeer">Root Beer</option>
+                                <option value="water">Bottled Water</option>
+                            </select>
+                        </td>
+                        <td><input type="number" name="qty" min="0" value="1"></td>
+                        <td>$1.99</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row">
+                <div class="medium-6 small-12 panel column radius">
+                    <h3 class="left">Total:</h3>
+                    <h3 class="right">$0.00</h3>
+                </div>
+
+                <div class="medium-6 small-12 column">
+                    <button class="right">Place Order</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+<footer>
+    Hot Mess Pizza 2015 - Site by Chad Ohl
+</footer>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
